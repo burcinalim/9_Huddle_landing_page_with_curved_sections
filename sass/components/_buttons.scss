@@ -1,0 +1,83 @@
+@use '../abstracts' as a;
+@use '../base' as b;
+
+
+.btn-try{
+    font-family:b.$body-font;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: a.$btn-color;
+    background-color: white;
+    border: 0.5px solid a.$btn-color;
+    border-radius: 3rem;
+    width: 14rem;
+    height: 4rem;
+    box-shadow: 0.05px 0.05px 1.4px 0.5px a.$btn-color;
+    opacity: 0.7;
+    cursor: pointer;
+    
+    &:hover{
+        opacity: 0.3;
+    }
+
+    @media (max-width:480px){
+        font-size: 0.5rem;
+        width: 5rem;
+        height: 1.5rem;
+    }
+
+}
+
+    
+
+.btn-start{
+    font-family:b.$body-font;
+    font-weight: 600;
+    font-size: 2.5rem;
+    background-color: a.$btn-color;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    width: 40rem;
+    height: 8rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: a.$btn-color-light;
+    }
+
+    @media (max-width:480px){
+        font-size: 0.8rem;
+        width: 13rem;
+        height: 2.5rem;
+    }
+}
+
+
+.btn-subs{
+    width: 40rem;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: a.$btn-color;
+    font-size: 3.5rem;
+    color: white;
+    margin-left: 3rem;
+    cursor: pointer; 
+
+    &:hover{
+        background-color: a.$btn-color-light;
+     }
+
+    @media (max-width:480px){
+        width: 9rem;
+        height: 2rem;
+        padding: 0.5rem 0;
+        font-size: 0.7rem;
+        border-radius: 0.2rem;
+        margin-left: 11rem;
+    }
+}
